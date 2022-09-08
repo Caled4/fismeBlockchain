@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=E, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="barraNavegador">
+        <ul>
+            <li><a clas="navegador" href="./inicio">Inicio </a></li>
+            <li><a class="navegador" href="./buscar">Buscar </a></li>
+            <!-- <li><a class="navegador">login </a></li> -->
+            <li><a class="navegador" href="./about">About</a></li>
+        </ul>
+        <!-- <hr> -->
+    </div>
+<div class="buscador">
+    <input type="text" class="recipient" placeholder="alumno" id="recipient">
+    <button type="submit" onclick="bucar()">BUSCAR</button>
+</div>
+<div class="tableCertificados">
+    <table class="certificado">
+        <tr>
+            <!-- <td> vacio</td> -->
+
+            <!-- <td class="certificadoLogo">
+                <div class="logoImg">
+
+                    <img
+                        src="https://scontent.ftru2-1.fna.fbcdn.net/v/t1.18169-9/18403117_126478161239921_3425414404033192847_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8631f5&_nc_ohc=jJiqOr_VvSUAX8z31v8&_nc_ht=scontent.ftru2-1.fna&oh=00_AT_l45j5DXHL6MsGm7K2hh_2ll_KdWgTTVz0QGtN64c8qQ&oe=631CB58E">
+                </div>
+            </td> -->
+            <td class="certificadoSender" colspan="2"> "FACULTAD DE INGENERIA DE SISTEMAS Y MECANICA ELECTRICA" </td>
+            <!-- <td> vacio</td> -->
+
+        </tr>
+        <tr>
+            <!-- <td> vacio</td> -->
+            <td class="certificadoEstado" colspan="2">CERTIFICADO OTORGADO A:</td>
+            <!-- <td> vacio</td> -->
+        </tr>
+        <tr>
+            <td class="certificadoRecipient" colspan="2">CALED MAHATMA CONTRERAS RAMOS
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td class="certificadoDescription" colspan="2">Por su participacion en calidad de DESARROLLADOR en el Primer Aplicativo Bloc Para la Emision de Certificados Para Eventos Academicos, organizado por la Facultad de ingenieria de Sistemas y Mecanica Electrica de UNTRM</td>
+        </tr>
+        <tr>
+            <td class="certificadoHash">hTRE6588as884+h8</td>
+            <!-- <td>vacio</td> -->
+            <td class="certificadoFecha">1660441963262</td>
+        </tr>
+    </table>
+    <footer>
+
+    </div>
+        <table class="footer">
+            <tr>
+    
+                <td class="mediaLinea">
+                    <hr class="hrSombra">
+                </td>
+                <td>
+                    <div class="content">
+    
+                        <img class="logoUTNRM"
+                            src="https://www.carrerasadistancia.com.pe/logos/original/logo-universidad-nacional-toribio-rodriguez-de-mendoza-de-amazonas.png">
+                    </div>
+                </td>
+                <td class="mediaLinea">
+                    <hr class="hrSombra">
+                </td>
+    
+            </tr>
+        </table>
+    </footer>
+    <style>
+        #barraNavegador ul {
+            margin-top: 2%;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        #barraNavegador li {
+            display: inline;
+            text-align: center;
+            /* margin: 0  0 0; */
+        }
+
+        #barraNavegador li a {
+            padding: 1% 10% 1% 10%;
+            color: #666;
+            background-color: #e3e6f3;
+            /* border: 1px solid rgb(14, 20, 60); */
+            text-decoration: none;
+            box-shadow: 7px 13px 13px #000;
+
+        }
+
+        /* #barraNavegador li a:hover {
+            background-color: #333333;
+            color: #ffffff;
+        } */
+        .navegador {
+            width: 23%;
+            /* margin: 10%; */
+        }
+
+        body {
+
+            width: 90%;
+            height: 90%;
+            background: #1F4373
+        }
+
+
+
+        .mediaLinea {
+            width: 45%;
+            float: center;
+        }
+
+        div.content {
+            width: 100%;
+            
+            float: right;
+            /* padding: 5px; */
+            /* background-color: #000000; */
+            color: #fff;
+        }
+
+        div.content img {
+            max-width: 100%;
+            opacity: 0.9;
+        }
+        /* div.logoImg {
+            width: 20%;
+            margin-right: 0%;
+            float: right;
+            padding: 5px;
+            /* background-color: #000000; 
+            color: #fff;
+        } */
+
+        div.logoImg img {
+            max-width: 100%;
+            opacity: 0.8;
+        }
+        .hrSombra {
+            box-shadow: 7px 4px 0px #000
+        }
+
+        li {
+            font-family: sans-serif;
+            font-size: 100%;
+            font-style: oblique
+        }
+
+        .certificado {
+            width: 90%;
+            height: 45%;
+            /* margin-top: 5%; */
+            margin: auto;
+            background-color: beige;
+            border: #000;
+            box-shadow:  2PX 2px 2px 2px #000;
+
+        }
+
+        .certificadoLogo {
+            text-align: right;
+            width: 50%;
+        }
+
+        .certificadoSender {
+            text-align: center;
+            width: 10%;
+        }
+
+        .certificadoEstado {
+            /* column-span: 2; */
+            text-align: center;
+            width: 5%;
+        }
+
+        .certificadoRecipient {
+            margin-right: 1%;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        .certificadoDescription {
+            text-align: center;
+        }
+
+        .certificadoHash {
+            text-align: left;
+        }
+
+        .certificadoFecha {
+            text-align: right;
+        }
+
+        table tr td hr {
+            width: 80%;
+        }
+
+        /* table tr td img {
+            height: 10%;
+        } */
+        /* .footer{
+            width: 100%;
+            margin-left: 5%;
+        }  */
+        .buscador{
+            margin-top: 3%;
+            margin-left: 15%;
+           /* margin: auto; */
+           /* background-color: #000; */
+        }
+        .recipient {
+            width: 81%;
+            background: #24303c;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 2%;
+            /* margin-left: 15%; */
+            border: 1px solid #1f53c5;
+            font-family: 'calibri';
+            font-size: 18px;
+            color: white;
+        }
+
+        button {
+            width: 15%;
+            background: #1A3C6D;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border: 1px solid #1f53c5;
+            font-family: 'calibri';
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            float: right;
+            
+        }
+        .tableCertificados{
+            width: 80%;
+            height: 70%;
+            background: #314769;
+            padding: 2%;
+            margin: auto;
+            margin-top: 1%;
+            border-radius: 1%;
+            font-family: 'calibri';
+            /* color: white; */
+            box-shadow: 7px 13px 37px #000;
+
+        }
+
+        /* table {
+            width: 80%;
+            margin: auto;
+            position: absolute;
+            top: 85%;
+            left: 9%;
+        }
+        .tercio{
+            width: 21%;
+            text-align: left;
+        }
+        .sexto{
+            width: 40%;
+        }
+        .entero{
+            width: 100%;
+            text-align: center;
+        } */
+        .footer{
+            width: 80%;
+            margin: auto;
+            position: absolute;
+            top: 85%;
+            left: 9%;
+        }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="tituloLogin">LOGIN</h1>
+    <form action="">
+        <input type="text" class="usuario" id="usuario" placeholder="usuario">
+        <input type="text" class="clave" id="clave" placeholder="clave">
+        <button type="submit" onclick="login()">
+            ingresar
+        </button>
+    </form>
+    <Script>function login() {
+            var user, pass
+            user = document.getElementById("usuario").value
+            pass = document.getElementById("clave").value
+            if (user === "FISME-UNTRM" && pass === "1234") {
+                window.location = "CrearCertificados.html"
+            }
+            var url = "http://localhost:3001/4dM1n2"
+        }</Script>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background: #1F4373
+        }
+
+        form {
+            width: 60%;
+            padding: 5%;
+            margin: auto;
+            background-color: #193355;
+            box-shadow: 7px 13px 37px #000;
+            border:1px solid #000;
+        }
+
+        .tituloLogin {
+            margin-left: 10%;
+            /* text-align:; */
+            font-size: 100px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .usuario {
+            width: 90%;
+            background: #24303c;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border: 1px solid #1f53c5;
+            font-family: 'calibri';
+            font-size: 18px;
+            color: white;
+
+        }
+
+        .clave {
+            width: 90%;
+            background: #24303c;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border: 1px solid #1f53c5;
+            font-family: 'calibri';
+            font-size: 18px;
+            color: white;
+        }
+
+        button {
+            width: 17%;
+            background: #1A3C6D;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border: 1px solid #1f53c5;
+            font-family: 'calibri';
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            
+        }
+    </style>
+</body>
+
+</html>
